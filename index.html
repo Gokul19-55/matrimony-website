@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LGBQ+ Matrimony</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>LGBQ+ Matrimony</h1>
+        <p>Find your perfect match with pride!</p>
+    </header>
+
+    <!-- Carousel Section -->
+    <section class="carousel">
+        <div class="slide" onclick="showNotice('Gay')">
+            <img src="gay.jpeg" alt="Gay" >
+            <p>Gay</p>
+        </div>
+        <div class="slide" onclick="showNotice('Lesbian')">
+            <img src="lesbian.jpeg" alt="Lesbian" >
+            <p>Lesbian</p>
+        </div>
+        <div class="slide" onclick="showNotice('Bisexual')">
+            <img src="bisexual.jpeg" alt="Bisexual">
+            <p>Bisexual</p>
+        </div>
+        <div class="slide" onclick="showNotice('Queer')">
+            <img src="queer.jpeg" alt="queer">
+            <p>Queer</p>
+        </div>
+    </section>
+    <!-- button-->
+    <div id="button" onclick="showImage()">Click Here to apply</div>
+<img id="image" src="Awareness.jpeg" alt="Image" class="full-screen-image">
+
+<script>
+    function showImage() {
+        var img = document.getElementById("image");
+        img.style.display = (img.style.display === "none") ? "block" : "none";
+    }
+</script>
+<!-- button2-->
+
+<div id="button2" onclick="showImage()">Click Here to apply</div>
+<img id="image1" src="Awareness.jpeg" alt="Image" class="full-screen-image">
+
+<script>
+    function showImage(image1) {
+        var img = document.getElementById("image1");
+        img.style.display = (img.style.display === "none") ? "block" : "none";
+    }
+</script>
+<!-- button3-->
+
+<div id="button3" onclick="showImage()">Click Here to appply</div>
+<img id="image2" src="Awareness.jpeg" alt="Image" class="full-screen-image">
+
+<script>
+    function showImage(image2) {
+        var img = document.getElementById("image2");
+        img.style.display = (img.style.display === "none") ? "block" : "none";
+    }
+</script>
+<!-- button4-->
+
+<div id="button4" onclick="showImage()">Click Here to apply</div>
+<img id="image3" src="Awareness.jpeg" alt="Image" class="full-screen-image">
+
+
+<script>
+    function showImage(image3) {
+        var img = document.getElementById("image3");
+        img.style.display = (img.style.display === "none") ? "block" : "none";
+    }
+</script>
+
+
+    <!-- Notice -->
+    <div id="notice" class="notice"></div>
+
+    <footer>
+        <p>Made with pride ❤️</p>
+    </footer>
+
+    <script>
+        function showNotice(category) {
+            const notice = document.getElementById('notice');
+            notice.textContent = category + " category selected!";
+            notice.style.display = 'block';
+            setTimeout(() => {
+                notice.style.display = 'none';
+            }, 2000);
+        }
+    </script>
+</body>
+</html>

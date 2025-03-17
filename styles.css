@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+}
+
+header {
+    background:linear-gradient(90deg,red,orange,yellow,green,blue,indigo,violet);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    padding: 1rem;
+    gap: 10px;
+}
+
+.slide {
+    min-width: 300px;
+    max-width: 300px;
+    flex: 0 0 auto;
+    position: relative;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.slide img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+   
+}
+
+.slide p {
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.notice {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background:linear-gradient(90deg,red,orange,yellow,green,blue,indigo,violet);
+    color: white;
+    margin-top: 90px;
+}
+#button{
+    position: fixed;
+    margin-left: 120px;
+    color: blue;
+}
+#button2{
+    position: fixed;
+    margin-left: 450px;
+    color: blue;
+}
+#button3{
+    position: fixed;
+    margin-left: 760px;
+    color: blue;
+}
+#button4{
+    position: fixed;
+    margin-left: 1100px;
+    color: blue;
+
+
+}
+.full-screen-image {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    z-index: 1000;
+    background-color: black;
+
+}
+@media only screen and (max-width: 768px) {
+    .full-screen-image {
+        object-fit: contain;
+    }
+}
